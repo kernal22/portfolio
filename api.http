@@ -1,0 +1,10 @@
+@base_url = http://localhost:9009
+
+POST {{base_url}}/auth/sign-up HTTP/1.1
+content-type: application/json
+
+{   "name": "sanjay",
+    "email": "admin@test.com",
+    "phone": 9090911111,
+    "password": "admin"
+}

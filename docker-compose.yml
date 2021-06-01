@@ -1,0 +1,21 @@
+version: "2"
+services:
+  web:
+    container_name: portfolio-app
+    image: portfolio-app
+    restart: always
+    build: .
+    ports:
+      - "9009:9009"
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb:/data/db
+volumes:
+  mongodb:
+  mongodb_config:

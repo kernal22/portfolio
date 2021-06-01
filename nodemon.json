@@ -1,0 +1,7 @@
+{
+    "watch": [
+        "src"
+      ],
+      "ext": "js, html, ejs",
+      "exec": "cross-env NODE_ENV=development node src/index.js"
+}

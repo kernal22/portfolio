@@ -1,0 +1,11 @@
+<% include header.ejs %>
+    <div class="container-scroller">
+        <% include sidebar.ejs %>
+            <div class="container-fluid page-body-wrapper">
+                <%include navbar.ejs%>
+                    <div class="main-panel">
+                        <%- body%>
+                    </div>
+            </div>
+    </div>
+    <% include footer.ejs %>
